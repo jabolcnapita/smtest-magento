@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE config>
+<!--
+/**
+ * app/code/local/AlesW/Example/etc/adminhtml.xml
+ *
+ * 
+ *
+ * @author    Ales Watzak
+ * @category  AlesW
+ * @package   Example
+ */
+-->
+<config>
+    <menu> 												<!-- Add a new menu item -->
+        <example translate="title" module="example">
+            <title>Event</title> 						<!-- Menu item will show as Example -->
+            <sort_order>1000</sort_order>
+            <action>adminhtml/event</action> 			<!-- build link for the menu item magento.local/admin/example; needs controller -->
+        </example>
+    </menu>
+</config>

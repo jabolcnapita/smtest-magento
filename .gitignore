@@ -1,0 +1,9 @@
+# Ignore local.xml created by Magento installer
+app/etc/local.xml
+
+# Ignore other session, cache, log files
+var/session
+var/cache
+var/log
+var/report
+media/catalog/

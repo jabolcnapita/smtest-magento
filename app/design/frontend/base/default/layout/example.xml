@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE layout>
+<!--
+/**
+ * app/design/frontend/base/default/layout/example.xml
+ *
+ * This example code is provided for use with the Mastering Magento video
+ * series, by Packt Publishing.
+ *
+ * @author    Franklin P. Strube <franklin.strube@gmail.com>
+ * @category  MasteringMagento
+ * @package   Example
+ * @copyright Copyright (c) 2012 Packt Publishing (http://packtpub.com)
+ */
+-->
+<layout version="0.1.0">
+    <example_index_index> 								<!--  matches URL in browser (index action of index controller of example frontname)  -->
+        <update handle="page_two_columns_right" /> 		<!-- we are applying 2 column layout with right hand sidebar -->
+
+        <!-- add reference to content area of a page -->
+        <reference name="content">
+        	<!-- use template block in core -->
+        	<!-- template goes in app/design/frontend/base/template -->
+        	<!-- path provided bellow "example/welcome.phtml" is relative from template directory -->
+        	<!-- <block type="core/template" template="example/welcome.phtml" /> -->
+
+        	<!-- Alternative way is to use our custom Block with the same template file defined within bloc class -->
+        	<!-- Magento looks within example module, inside Block directory and finds Welcome.php file -->
+        	<block type="example/welcome" />
+        </reference>
+    </example_index_index>
+</layout>
